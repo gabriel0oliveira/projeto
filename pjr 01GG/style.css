@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    body {
+        background-color: #f1f1f1;
+        text-decoration: none;
+    }
+    .botao {
+        color: rgb(250, 243, 243);
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 5px;
+        text-decoration: none;
+    }
+    .botao:hover{
+        color:rgb(14, 13, 13);
+        background:rgb(245, 241, 241)
+    }
+    .landing {
+        min-height: 400px;
+        background-size: cover;
+        padding: 5px;
+        background-image: url(img/bgi.jpg);
+        background-size: cover;
+        background-position: center;
+    
+    }
+    #Logo{
+        color: #f1f1f1;
+        text-decoration: none;
+    }
+    h2{
+        text-align: center;
+        margin-top: 10px;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 10vh;
+    }
+    .nav-links {
+        display: flex;
+        text-decoration: none;
+        
+        
+    }
+    .nav-links li{
+      transition: .5s;
+        padding: 10px;
+        font-size: 12px;
+        list-style: none;
+        text-decoration: none;
+    }
+    #logo {
+        font-weight: lighter;
+        font-size: 2rem;
+    }
+    .big-text {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        font-size: 5rem;
+        color: #f1f1f1;
+    }
+    #texto{
+        align-items: center;
+        display: flex;
+        text-align: center;
+        color: #f1f1f1;
+        height: 750px;
+    }
+    .intro{
+        background: rgb(0, 0, 0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-text{
+        color:rgb(233, 233, 233);
+        font-size:3rem;
+    }
+    
+    .hide{
+        background: black;
+        overflow:hidden;
+    }
+    
+    .hide span{
+        transform: translateY(100%);
+        display:inline-block;
+    }
+    
+    #serviços{
+        padding:60px;
+        box-sizing:border-box;
+        border-radius: 25px;
+        display:flex;
+        display:inline-block;
+        align-items:center;
+    }
+    #serviços div{
+        display:flex;
+        display:inline-block;
+        align-items:center;
+        text-align:center;
+        margin-top:30px;
+    }
+    
+    #sobre{
+        padding:60px;
+        box-sizing:border-box;
+        border-radius:25px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    #sobre h2{
+        margin:10px;
+    }
+    #sobre p{
+        font-size:15px;
+    }
+    #contato{
+        padding:60px;
+        box-sizing:border-box;
+        border-radius:25px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    #contato div{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        margin-top:30px;
+    }
+    #portifolio{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        padding-top:20px;
+        margin:10px;
+    }
+    
+    #portifolio img{
+        width:30%;
+        margin:10px;
+    }
+    #portifolio div{
+        align-items: center;
+        text-align:center;
+        display:flex;
+        flex-direction:center;
+    }
+    .nav-Links h3{
+        text-align:center;
+    }
+    
+    footer{
+        text-align:center;
+        background-color:black;
+        padding:3px;
+        margin:3px;
+        border-radius:1px;
+        color:#f1f1f1;
+    }
+    nav > section{
+        align-items:center;
+    }
+    
+    @media screen and(min-width:770px) {
+        nav{
+            flex-direction: row;
+            justify-content: 20px;
+    
+            }
+    
+    nav ul{
+        flex-direction:row;
+        width:20px;
+    }
+    header{
+        height:600px;
+        height:600px;
+        justify-content: center;
+    }
+    #serviços{
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-items:flex-start;
+        max-width:1000px;
+        margin:auto;
+    }
+    }
+    #serviços h3{
+        text-align:center;
+        width:100%;
+    }
+    #serviços p{
+        font-size:13px;
+    }
+    #serviços div{
+        flex-grow:1;
+        flex-basis:150px;
+        padding:0 10px;
+    }
+    #contato{
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items:flex-start;
+        max-width:1000px;
+        margin: auto;
+    }
+    #contato div{
+        flex-grow:1;
+        flex-basis:150px;
+        padding:0 10px;
+    }
